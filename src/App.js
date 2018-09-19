@@ -15,7 +15,26 @@ class App extends Component {
         <Results />
       </div>
     );
-  }
+  };
+}
+
+// NYTimes API
+const queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+  show + "&api_key=GDrp9yYXxOT08SiDuSbymTZKPxz747Yg&limit=10";
+
+// AJAX GET
+$.ajax({
+  url: queryURL,
+  method: "GET"
+})
+
+.then(function(response) {
+
+    var results = response.data;
+
+    // For loop to grab 10 images
+//     for (var i = 0; i < results.length; i++) {
+// }
 }
 
 export default App;

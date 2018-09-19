@@ -27,6 +27,7 @@ const Search = props => (
           id="endYear"
         />
       </p>
+      <button id="search">Search</button>
     </form>
   </div>
 );
