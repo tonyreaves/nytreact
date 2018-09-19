@@ -5,8 +5,13 @@ import Search from "./Components/Search/Search.js";
 
 class App extends Component {
   render() {
-    return <Header />;
-    return <Search />;
+    return (
+      <div>
+        <Header />
+
+        <Search />
+      </div>
+    );
   }
 }
 

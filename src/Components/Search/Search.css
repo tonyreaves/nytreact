@@ -7,13 +7,14 @@
   min-height: 100%;
 }
 
-#articleDiv {
-  max-width: 96%;
-  margin: 0.5rem;
+.searchBox {
+  max-width: 80%;
+  margin: 0 auto;
   min-height: initial;
   background: rgb(223, 222, 222);
   padding: 1rem;
-  border-left: 0.7rem solid #456990;
+  border-top: 0.5rem solid #131927;
+  color: black;
 }
 
 .details {
@@ -22,32 +23,14 @@
   line-height: 1.4;
 }
 
-nav {
-  background: #050505;
-  height: 3.4rem;
-  margin: 10rem left;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
+.searchBox h2 {
+  color: black;
 }
 
-.pageTitle {
-  font-size: 3.8rem;
-  font-family: "Rubik", sans-serif;
-  letter-spacing: -0.15rem;
-}
-
-#theName {
-  left: -8.5rem;
-  position: absolute;
-  top: 13rem;
-  transform: rotate(270deg);
-  border-bottom: solid 0.45rem red;
-  display: flex;
-  height: 4rem;
-  position: fixed;
+.searchField {
+  width: 80%;
+  height: 1rem;
+  margin: 0 auto;
 }
 
 button {
@@ -70,7 +53,7 @@ button {
 #headline {
   font-size: 1.7rem;
   font-family: "Rubik", sans-serif;
-  color: #456990;
+  color: #131927;
   display: block;
   flex-grow: 1;
 }
