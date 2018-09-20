@@ -18,22 +18,44 @@ class App extends Component {
   }
 }
 
+let myQuery = "";
+
 // NYTimes API
 const queryURL =
   "https://api.nytimes.com/svc/search/v2/articlesearch.json" +
-  show +
   "&api-key=26c173d356d24490a332df2068d7f56f&q=";
 
-// AJAX GET
-$.ajax({
-  url: queryURL,
-  method: "GET"
-}).then(function(response) {
-  var results = response.data;
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      items: []
+    };
+  }
 
-  // For loop to grab 10 images
-  //     for (var i = 0; i < results.length; i++) {
-  // }
-});
+  componentDidMount() {
+    fetch(queryURL + myQuery)
+      .then(res => res.json())
+      .then(
+        result => {
+          this.setState({
+            isLoaded: true,
+            items: result.items
+          });
+        },
+        // Note: it's important to handle errors here
+        // instead of a catch() block so that we don't swallow
+        // exceptions from actual bugs in components.
+        error => {
+          this.setState({
+            isLoaded: true,
+            error
+          });
+        }
+      );
+  }
+}
 
 export default App;
