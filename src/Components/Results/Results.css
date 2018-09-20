@@ -28,19 +28,12 @@
   color: black;
 }
 
-.searchField {
-  width: 80%;
-  height: 1rem;
-  margin: 0 auto;
-}
-
-button {
-  background: #456990;
+#save {
+  background: green;
   padding: 0.7rem;
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   color: white;
-  border-radius: 4%;
   box-shadow: 0.1rem 0.1rem black;
   margin: 0.3rem 0 0.3rem 0.2rem;
 }
