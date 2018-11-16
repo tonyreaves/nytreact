@@ -1,5 +1,13 @@
 import React from "react";
 import "./Search.css";
+import searchApi from "../../Utils";
+console.log(
+  searchApi.searchApi({
+    query: "William P. Davis",
+    beginYear: "1991",
+    endYear: "2018"
+  })
+);
 
 const Search = props => (
   <div className="searchBox">
