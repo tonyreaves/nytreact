@@ -1,0 +1,65 @@
+#articles {
+  left: 5.8rem;
+  top: 3.6rem;
+  position: relative;
+  margin-top: 0.5rem;
+  margin-right: 6.5rem;
+  min-height: 100%;
+}
+
+.searchBox {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  min-height: initial;
+  background: rgb(223, 222, 222);
+  padding: 1rem;
+  border-top: 0.5rem solid #131927;
+  color: black;
+}
+
+.searchBox h2 {
+  color: black;
+}
+
+button {
+  background: #456990;
+  padding: 0.7rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0.1rem 0.1rem black;
+  margin: 0.3rem 0 0.3rem 0.2rem;
+  width: 100%;
+}
+
+.removeBtn {
+  background: red;
+  padding: 0.7rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0.1rem 0.1rem black;
+  margin: 0.3rem 0 0.3rem 0.2rem;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  left: 7rem;
+}
+
+#headline {
+  font-size: 1.7rem;
+  font-family: "Rubik", sans-serif;
+  color: #131927;
+  display: block;
+  flex-grow: 1;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+  color: lightgray;
+}

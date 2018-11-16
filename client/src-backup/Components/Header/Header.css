@@ -1,0 +1,27 @@
+.top {
+  height: 5.5 rem;
+  background: #131927;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: lightgray;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+  color: lightgray;
+}
+
+nav a {
+  border: solid 0.1rem lightgrey;
+  padding: 0.1rem;
+}
